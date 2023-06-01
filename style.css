@@ -1,185 +1,124 @@
 html, body {
-  margin:0;
-  font-family: 'Nunito Sans', sans-serif;
-	padding-left:min(3%,20px);
- color:#000;
-	/*font-size:max(12px,1vmin);*/
-	font-size:12px;
- background: #fff;  
+     margin:0;
+     font-family: 'Nunito Sans', sans-serif;
+     padding-left:min(3%,20px);
+     color:#000;
      background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-  
-    background-image:
-radial-gradient(at 82% 46%, hsla(70,68%,86%,1) 0px, transparent 50%),
-radial-gradient(at 99% 93%, hsla(157,68%,86%,1) 0px, transparent 50%),
-radial-gradient(at 42% 40%, hsla(95,68%,86%,1) 0px, transparent 50%),
-radial-gradient(at 21% 82%, hsla(185,68%,86%,1) 0px, transparent 50%),
-radial-gradient(at 68% 89%, hsla(19,68%,86%,1) 0px, transparent 50%),
-radial-gradient(at 48% 58%, hsla(158,68%,86%,1) 0px, transparent 50%),
-radial-gradient(at 99% 3%, hsla(91,68%,86%,1) 0px, transparent 50%);
-
-
-
+     background-attachment: fixed;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     /*
+     text-size-adjust: none;
+     -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+     -ms-text-size-adjust: none;
+     */
+     background-image: radial-gradient(at 82% 46%, hsla(70,68%,86%,1) 0px, transparent 50%), radial-gradient(at 99% 93%, hsla(157,68%,86%,1) 0px, transparent 50%), radial-gradient(at 42% 40%, hsla(95,68%,86%,1) 0px, transparent 50%), radial-gradient(at 21% 82%, hsla(185,68%,86%,1) 0px, transparent 50%), radial-gradient(at 68% 89%, hsla(19,68%,86%,1) 0px, transparent 50%), radial-gradient(at 48% 58%, hsla(158,68%,86%,1) 0px, transparent 50%), radial-gradient(at 99% 3%, hsla(91,68%,86%,1) 0px, transparent 50%);
+}
+ canvas{
+     position:fixed;
+     top:-50px;
+     left:min( 30% , 200px );
+     display: inline-block;
+     width:500px;
+     height:500px;
+}
+ .rect {
+     position:relative;
+     display:inline;
+     padding:0.0rem;
+     left:-0.25rem;
+     color:#000;
+    /* background: linear-gradient(-45deg, transparent 5px, #fff 0);
+     padding-right:20px;
+    */
+}
+ ::selection {
+     background: #000a;
+     color:white;
+}
+ h2{
+     font-weight:200;
+     font-stretch:98.8%;
+     font-variation-settings: "opsz" 48, "YTLC" 540;
+     font-optical-sizing: auto;
+     font-size:3rem;
+}
+ a,p,span,ul{
+     color:#111;
+     font-weight:400;
+     font-stretch:93.3%;
+     font-style:normal;
+     font-variation-settings: "opsz" 16, "YTLC" 490;
+     font-optical-sizing: auto;
+     line-height:26px;
+     font-size:1.19rem;
+}
+ a{
+     color:#000065;
+     text-decoration: none;
+     background:#eeff41;
+}
+ a:hover{
+     background:#fff;
+}
+ a:after {
+     content: "↗" ;
+     font-size:21px;
+     position:relative;
+     top:1px;
+     left:-1px;
+}
+ p, ul{
+     margin:0px;
+     width:94%;
+     max-width: 800px;
+     -webkit-hyphens: auto;
+     -ms-hyphens: auto;
+     hyphens: auto;
+    /*text-align: justify;
+    */
+}
+ ul{
+     list-style-type:"▸ ";
+}
+ li{
+     margin-left:0.0rem;
+     margin-right:4.0rem;
+}
+ main{
+     position:relative;
+     margin:3rem 2rem 2rem;
+     height:100% 
+}
+ article,header{
+     margin-bottom:4rem 
+}
+ footer p, footer a{
+     font-weight:350;
+     font-stretch:98.5%;
+     font-style:italic;
+     font-variation-settings: "opsz" 14, "YTLC" 490;
+     font-optical-sizing: auto;
+     line-height:20px;
+     font-size:15px;
+     margin-bottom:2rem;
+     line-height:1.4rem;
+}
+ footer a:after{
+     font-size:16px;
+     font-style:normal;
+}
+ #information{
+     position:absolute;
+     top:180px 
+}
+ ul li{
+     margin-top:1.5rem 
 }
 
-/* DUNNO IF NEEDED
-@media screen and (max-width: 600px) {
-	html, body{
-	font-size:10px;
-	background-color: blue;
-	}
-}
-
-*/
-
-canvas{
-position:fixed;
-  top:-50px;
-  left:min( 30% , 200px );
-  display: inline-block;
-  width:500px;
-  height:500px;
-}
-
-
-
-svg{
-/*filter: drop-shadow(0px 0px 10px rgb(255 255 255 / 0.8));*/
-}
-
-
-h1{
-  font-size:2rem;
-  font-weight:200;
-  font-stretch:98.8%;
-  font-variation-settings: "opsz" 48, "YTLC" 540;
-  font-optical-sizing: auto;
- /* text-shadow: #fff7 0 0 8px;*/
-margin:0px;
-  display:block;
-  position:relative;
-	letter-spacing: 0.5rem;
+ @media (max-width: 768px) {
+    /* For mobile phones: */
 
 }
-
-.rect {
-  position:relative;
-  display:inline;
-  padding:0.2rem;
-  
-  left:-0.3rem;
-  /*background:#fff;*/
-  color:#000;
-/* background: linear-gradient(-45deg, transparent 5px, #eeff41 0);
-  padding-right:10px;*/
-        }
-
-::selection {
-  background: #000a;
-  color:white;
-}
-
-h2{
-  font-weight:200;
-  font-stretch:98.8%;
-  font-variation-settings: "opsz" 48, "YTLC" 540;
-  font-optical-sizing: auto;
-  font-size:48px;  
-}
-
-a,p,span,ul{
-  color:#111;
-  font-weight:460;
-  font-stretch:93.3%;
-  font-style:normal;
-  font-variation-settings: "opsz" 16, "YTLC" 490;
-  font-optical-sizing: auto;
-  line-height:26px;
-  font-size:19px;
-}
-
-a{
- color:#000065; 
-  text-decoration: none;
-  background:#ffa; 
-}
-
-a:hover{
-background:#fff; 
-}
-
-a:after { 
-	content: "↗" ; 
-	font-size:21px; 
-	position:relative;
-	top:1px;
-	left:-1px;}
-
-p, ul{
-  margin:0px;
-  width:94%;
-  max-width: 800px;
-    -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-	/*text-align: justify;*/
-}
-
-ul{
-    list-style-type:"▸ ";
-}
-li{
-    margin-left:0.0rem;
-	margin-right:4.0rem;
-}
-main{
-    position:relative;
-    margin:3rem 2rem 2rem;
-    height:100%
-}
-
-article,header{
-    margin-bottom:4rem
-}
-footer p, footer a{
-  font-weight:350;
-  font-stretch:98.5%;
-  font-style:italic;
-  font-variation-settings: "opsz" 14, "YTLC" 490;
-  font-optical-sizing: auto;
-  line-height:20px;
-  font-size:15px;
-    margin-bottom:4rem;
-	line-height:1.4rem;
-}
-footer a:after{
-	font-size:16px;
-	font-style:normal;
-}
-
-#information{
-    position:absolute;
-    top:180px
-}
-ul li{
-    margin-top:1.5rem
-}
-
-
-
-@media (max-width: 767px) {
-	.inner {
-		padding: 27px 20px 37px;
-		border: none;
-		box-shadow: none;
-		-webkit-box-shadow: none;
-	    -moz-box-shadow: none;
-	    -ms-box-shadow: none;
-	    -o-box-shadow: none;
-	}
-	.wrapper {
-		background: #39459b;
-		border: 10px solid #0d99d7;
-	}
-}
+ 
