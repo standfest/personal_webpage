@@ -7,13 +7,16 @@ html, body {
      background-attachment: fixed;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
+     background:#eee;
      /*
      text-size-adjust: none;
      -webkit-text-size-adjust: none;
      -moz-text-size-adjust: none;
      -ms-text-size-adjust: none;
      */
+     /*
      background-image: radial-gradient(at 82% 46%, hsla(70,68%,86%,1) 0px, transparent 50%), radial-gradient(at 99% 93%, hsla(157,68%,86%,1) 0px, transparent 50%), radial-gradient(at 42% 40%, hsla(95,68%,86%,1) 0px, transparent 50%), radial-gradient(at 21% 82%, hsla(185,68%,86%,1) 0px, transparent 50%), radial-gradient(at 68% 89%, hsla(19,68%,86%,1) 0px, transparent 50%), radial-gradient(at 48% 58%, hsla(158,68%,86%,1) 0px, transparent 50%), radial-gradient(at 99% 3%, hsla(91,68%,86%,1) 0px, transparent 50%);
+*/
 }
  canvas{
      position:fixed;
