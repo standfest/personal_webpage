@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-      <title>Dr. Matthias Standfest</title>
-      <link rel="stylesheet" href="./style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,93.3,400,464;0,6..12,98.8,200,540;1,6..12,98.5,350,490&display=swap" rel="stylesheet">
-   </head>
-    <script type="text/javascript">
-(function(window, document, dataLayerName, id) {
-window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
-function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
-var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
-var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
-tags.async=!0,tags.src="https://standfest.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
-!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
-})(window, document, 'dataLayer', '752d0688-386b-4cb0-ad20-cf0e74e08ba6');
-</script>
-   <body>
-      <!-- Canvas for visual effects -->
-      <canvas id="canvas"></canvas>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js'></script>
-      <script src='perlin.js'></script>
-      <script src="./script.js"></script>
-      <section id="information">
-         <header>
-            <br><br><br><br><br><br>
-         </header>
-         <article>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Dr. Matthias Standfest</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,93.3,400,464;0,6..12,98.8,200,540;1,6..12,98.5,350,490&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+    (function(window, document, dataLayerName, id) {
+    window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+    function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+    var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+    var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+    tags.async=!0,tags.src="https://standfest.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+    !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+    })(window, document, 'dataLayer', '752d0688-386b-4cb0-ad20-cf0e74e08ba6');
+    </script>
+<body>
+    <!-- Canvas for visual effects -->
+    <canvas id="canvas"></canvas>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js'></script>
+    <script src='perlin.js'></script>
+    <script src="./script.js"></script>
+    <section id="information">
+        <header>
+            <br><br><br><br><br><br><br><br><br>
+            <h2 class="rect">Dr Matthias Standfest</h2>
+            <p>Leading Data and AI Strategies with a Nuanced, 360-Degree Perspective</p>
+        </header>
+        <article>
             <h2 class="rect">Overview</h2>
-            <p>Dr. Matthias Standfest's groundbreaking work in the last decade revolves around a data-centric AI process tailored for the real estate domain. Recognized globally as the leading authority on floor plan document classification, he has adeptly addressed challenges in this space. His track record boasts successful digital transformations, combining profound methodological, domain-specific, and meta insights.</p>
-         </article>
-         <article>
+            <p>Dr. Matthias Standfest is a globally recognized expert in data-centric AI for the real estate domain. With over a decade of groundbreaking work, he has pioneered methods to digitize and transform industry practices. His expertise in floor plan document classification and his contributions to AI methodologies have set new standards in the field.</p>
+        </article>
+        <article>
+            <h2 class="rect">Professional Background</h2>
+            <p>Dr. Standfest's career is marked by significant achievements and leadership roles:</p>
+            <ul>
+                <li><strong>CEO & Co-Founder of AI Corporate Startup at Drees & Sommer AG</strong> - Developing an AI-based SaaS product strategy for the AEC industries.</li>
+                <li><strong>CEO & Founder of Archilyse AG</strong> - Innovated a data annotation and enrichement pipeline that revolutionized real estate market analytics.</li>
+                <li><strong>Researcher at ETH Zurich</strong> - Contributed to multiple international research projects like ESUM and at the Future Cities Lab in Singapore to advance AI methodologies in urban planning.</li>
+            </ul>
+        </article>
+        <article>
+            <h2 class="rect">Key Projects and Contributions</h2>
+            <ul>
+                <li><a href="https://doi.org/10.5281/zenodo.7070951" target="_blank">Swiss Dwellings</a> — A pioneering dataset encompassing 1% of all Swiss dwellings, enhancing AI training and research in architecture.</li>
+                <li><a href="https://github.com/standfest/Archilyse" target="_blank">Archilyse Codebase</a> — Open-source data refinement pipeline, significantly reducing costs for the real estate industry.</li>
+                <li><a href="https://cvaad-workshop.github.io/" target="_blank">HouseGAN++ ft. Swiss Dwellings</a> — Workshop at ICCV23 in collaboration with TU Delft, showcasing cutting-edge AI applications.</li>
+                <li><a href="https://archive.arch.ethz.ch/esum/index.html" target="_blank">ESUM</a> — Study focusing on holistic anthropocentric urban sensing and spatial performance analysis, contributing to advanced AI methodologies.</li>
+                <li><a href="https://www.zukunftbau.de/projekte/forschungsfoerderung/1008187-2116" target="_blank">Neufert 4.0</a> — Collaborative project with Bauhaus University Weimar, advancing architectural data science.</li>
+            </ul>
+        </article>
+        <article>
+            <h2 class="rect">Achievements and Vision</h2>
+            <p>Dr. Standfest has directly secured 8-figure funding for cutting-edge projects, demonstrating exceptional capability in project management and innovation. His vision involves establishing a data-centric research paradigm that employs generative AI to transform architectural design and urban planning. By refining data homogenization techniques and implementing augmented AI process patterns, he aims to replace outdated deterministic methods with robust stochastic strategies.</p>
+        </article>
+        <article>
             <h2 class="rect">Connect with Dr. Standfest</h2>
-            <p>Engage in a conversation via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#115;&#116;&#97;&#110;&#100;&#102;&#101;&#115;&#116;&#46;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#119;&#101;&#98;&#112;&#97;&#103;&#101;" target="_blank">email</a>. Explore his contributions on <a href="https://github.com/standfest" target="_blank">Github</a>, connect on <a href="https://www.linkedin.com/in/standfest/" target="_blank">LinkedIn</a>, or browse his publications on <a href="https://scholar.google.com/citations?user=vKAmn_wAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>. Participate in enriching discussions surrounding his work on his <a href="https://discord.com/invite/xgrxUVVCUT">discord server</a>. For public speaking engagements, AI and data consultancy, or academic research collaborations, Dr. Standfest is the ideal partner.</p>
-         </article>
-         <article>
-            <h2 class="rect">Prestigious Endeavors</h2>
-            <p>Previously, Dr. Standfest spearheaded <a href="https://ethz.ch/en/news-and-events/eth-news/news/2019/04/archilyse.html" target="_blank">Archilyse</a>, revolutionizing real estate decision-making processes through advanced data analytics. His academic collaborations span esteemed institutions such as <a href="https://ia.arch.ethz.ch/" target="_blank">ETH Zurich</a> and <a href="https://fcl.ethz.ch/" target="_blank">Future Cities Lab</a>. For an exhaustive list of his professional experiences, you may request his detailed resume via <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#115;&#116;&#97;&#110;&#100;&#102;&#101;&#115;&#116;&#46;&#115;&#99;&#105;&#101;&#110;&#99;&#101;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#119;&#101;&#98;&#112;&#97;&#103;&#101;" target="_blank">email</a>.</p>
-         </article>
-         <article>
-            <h2 class="rect">Signature Initiatives</h2>
-            <p>Dr. Standfest's relentless pursuit of innovation is evident in the diverse projects he undertakes, all centered around data-driven improvements. Some notable projects include:</p>
-            <ul>
-               <li><a href="https://doi.org/10.5281/zenodo.7070951" target="_blank">Swiss Dwellings</a> — A pioneering dataset of apartment models, amalgamated with geolocation-based simulations.</li>
-               <li><a href="https://github.com/standfest/Archilyse" target="_blank">Archilyse Codebase</a> — A testament to transparency, revealing the codebase of his transformative startup.</li>
-               <!-- I've rephrased descriptions for clarity and brevity, but you may want to further adjust or expand on the specifics. -->
-               <li>Robust Funnel — An innovative method to assess and forecast large sales funnels.</li>
-               <li>Neufert 4.0 — A collaborative effort with Bauhaus University Weimar's InfAr chair.</li>
-               <li>HouseGAN ft. Swiss Dwellings — A notable workshop at <a href="https://iccv2023.thecvf.com/">ICCV23</a> in conjunction with TU Delft.</li>
-            </ul>
-         </article>
-         <article>
-            <h2 class="rect">Upcoming Engagements</h2>
-            <p>Dr. Standfest frequently graces both academic and industry podiums, sharing his wealth of knowledge across various subjects.</p>
-            <ul>
-               <!-- Past Appearances 
-               <li><a href="https://thebighandshake.ch/" target="_blank">The Big Handshake</a>, Schlieren - June 20th, 2023</li>
-               -->
-               <li><a href="https://iccv2023.thecvf.com/" target="_blank">ICCV23</a>, Paris - October 2nd, 2023</li>
-            </ul>
-         </article>
-         <footer>
-            <p>Content last updated: Thursday, Aug 21st, 2023. All rights reserved by Dr. Matthias Standfest under <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">CC BY-NC 3.0</a>.</p>
-         </footer>
-      </section>
-   </body>
+            <p>For inquiries regarding public speaking engagements, AI and data consultancy, or academic research collaborations, please contact Dr. Standfest via <a href="mailto:contact@standfest.science">email</a>. Explore his contributions on <a href="https://github.com/standfest" target="_blank">GitHub</a>, connect on <a href="https://www.linkedin.com/in/standfest/" target="_blank">LinkedIn</a>, or browse his publications on <a href="https://scholar.google.com/citations?user=7X74uVYAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Matthias-Standfest/research" target="_blank">ResearchGate</a>.</p>
+        </article>
+        <footer>
+            <p>Content last updated: May 17, 2024. All rights reserved by Dr. Matthias Standfest under <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">CC BY-NC 3.0</a>.</p>
+        </footer>
+    </section>
+</body>
 </html>
