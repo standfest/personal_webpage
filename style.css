@@ -82,6 +82,9 @@ html, body {
     /*text-align: justify;
     */
 }
+article p{
+	background: #eeeb;
+}
  ul{
      list-style-type:"▸ ";
 }
